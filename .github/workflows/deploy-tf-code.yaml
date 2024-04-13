@@ -34,6 +34,10 @@ jobs:
     
         - name: 'Use gcloud CLI'
           run: 'gcloud info'
+        
+        - name: 'run-gcloud-login'
+          run: |
+            gcloud auth application-default login
                 
         - name: Setup Terraform
           uses: hashicorp/setup-terraform@v3
